@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>津山工業高等専門学校 - 高度情報専門人材育成事業推進室, NITTC - AITHRD</title>
+<meta name="description" content="津山工業高等専門学校 - 高度情報専門人材育成事業推進室: National Institute of Technology, Tsuyama College - Advanced IT Human Resource Development Project Promotion Office" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&display=swap&text=津山工業高等専門学校-高度情報専門人材育成事業推進室" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lekton&display=swap&text=,ACDHINOPRTacdefghijlmnoprstuvy" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #26237C;
+  color: #FFFFFF;
+}
+#container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#particles-js > canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.header-en {
+  font-family: "Lekton", monospace;
+  font-size: 32pt;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 0 30px 0;
+  line-height: 1.1;
+}
+.header-ja {
+  font-family: 'IBM Plex Sans JP', sans-serif;
+  font-size: 18pt;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  line-height: 1.4;
+}
+</style>
+</head>
+<body>
+<div id="container">
+  <div id="particles-js"></div>
+  <div class="header-en">
+    <div>National Institute of Technology, Tsuyama College</div>
+    <div>Advanced IT Human Resource Development Project</div>
+    <div>Promotion Office</div>
+  </div>
+  <div class="header-ja">
+    <div>津山工業高等専門学校</div>
+    <div>高度情報専門人材育成事業推進室</div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+window.addEventListener('load', function() {
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 60,
+      "density": { "enable": true, "value_area": 1000 }
+    },
+    "color": {
+      "value": "#FFFFFF"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": { "width": 0 },
+      "polygon": { "nb_sides": 1 }
+    },
+    "opacity": {
+      value: 0.3,
+      "random": true,
+      "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false }
+    },
+    "size": {
+      "value": 5,
+      "random": true,
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#FFFFFF",
+      "opacity": 0.4,
+      "width": 1
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    }
+  },
+  "retina_detect": true
+}, function(){});
+});
+</script>
+</body>
+</html>
